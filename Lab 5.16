@@ -1,0 +1,14 @@
+num = input()
+
+num_split = num.split()
+
+max_num = 0
+sum_num = 0
+
+for x in num_split:
+    if int(x) > int(max_num):         #looping all input, keep the largest number
+        max_num = x
+    sum_num += int(x)                 #calculate the sum
+
+sum_num = sum_num/len(num_split)      #calculate the average
+print(f'{int(sum_num)} {max_num}')
