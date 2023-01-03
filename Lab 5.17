@@ -1,0 +1,12 @@
+num = input()
+num_split = num.split()
+
+num_list = []
+
+for num in num_split:                #looping all input number
+    if int(num) >= 0:
+        num_list.append(int(num))    #append only the positive number into a list
+        num_list.sort()              #sort the list
+        
+for x in num_list:                   #print all the number 
+    print(x, "", end="" )
