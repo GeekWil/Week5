@@ -1,0 +1,12 @@
+num = input()
+num_split = num.split()
+L = len(num_split)
+
+num_list = []
+
+if L <= 9:                           #test case should not exceed 9
+    for x in num_split:
+        num_list.append(x)           #make a list
+    print(num_list[L//2])            #output the middle integer of the list
+else:
+    print("Too many inputs")
