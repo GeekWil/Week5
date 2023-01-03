@@ -1,0 +1,9 @@
+doc = input()
+name = input()
+
+doc_s = doc.split()   #make it into name,number
+
+for x in doc_s:
+    x = x.split(",")  
+    if x[0] == name:  #if the name is the name that we looking for
+        print(x[1])   #output number
