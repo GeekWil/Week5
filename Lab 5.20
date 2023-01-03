@@ -1,0 +1,7 @@
+letter = input()
+letter_s = letter.split()                #keep the words as it is
+letter_l = letter.lower().split()        #make all the words in lowercase
+
+
+for i in range(len(letter_l)):
+    print(letter_s[i], letter_l.count(letter_l[i]))   #output the word, then count the words
