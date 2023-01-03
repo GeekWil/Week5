@@ -1,0 +1,18 @@
+num = input()
+r = input()
+
+num_split = num.split()
+r_split = r.split()
+
+output = []
+ran = []
+
+for x in num_split:          # get a list of all the integer
+    output.append(int(x))
+
+for y in r_split:    
+    ran.append(int(y))
+
+for z in output:                         #looping the list
+    if (z >= ran[0]) and (z <= ran[1]):  #if within the range then print the number
+        print(z, "", end = "")
